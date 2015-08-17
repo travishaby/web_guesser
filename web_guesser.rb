@@ -2,7 +2,7 @@ require 'sinatra'
 require 'sinatra/reloader'
 
 SECRET_NUMBER = rand(0..100)
-
+ 
 def responses(response)
   responses = {too_high: "Too high!", too_low: "Too low!", correct: "You are correct. Nice work!"}
   responses[response]
