@@ -1,5 +1,19 @@
 <html>
-  <head></head>
+  <head>
+  <style>
+      body {
+         <%=if response == "Too high!"
+              "background: red;"
+            elsif response == "Too low!"
+              "background: blue;"
+            elsif response == "You are correct. Nice work!"
+              "background: green;"
+            else response == "Sorry, you're out of guesses!"
+              "background: white;"
+            end%>
+            }
+    </style>
+  </head>
   <body>
     <form>
       <input type='text' name='guess' />
